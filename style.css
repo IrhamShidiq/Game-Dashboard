@@ -1,0 +1,545 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(220, 231, 247);
+    transition: all ease .4s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(177, 208, 255);
+} */
+
+body {
+    font-family: 'Assistant';
+    background: linear-gradient(to top, rgb(220, 231, 247), white);
+}
+
+
+
+/* Sidebar */
+
+.sidebar #close {
+    cursor: pointer;
+}
+
+.sidebar {
+    background-color: white;
+    box-shadow: 3px 0 8px rgb(186, 218, 247);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: all ease .6s;
+}
+
+.sidebar .navigasi {
+    background-color: rgb(253, 241, 218);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 3px 20px;
+    padding-top: 11.5px;
+    box-shadow: 0 0 2px rgb(201, 201, 201);
+    color: black;
+    cursor: pointer;
+}
+
+.sidebar .navigasi:active {
+    background-color: rgb(253, 241, 218);
+}
+
+.sidebar .navigasi p {
+    margin-left: 20px;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar .explore {
+    background-color: transparent;
+}
+
+.sidebar .sidebar-top {
+    background: rgb(53, 53, 95);
+    border-top-right-radius: 40px;
+}
+
+.sidebar .sidebar-top h1 {
+    font-size: 54px;
+}
+
+.sidebar .sidebar-top .sidebar-part {
+    position: relative;
+}
+
+.sidebar .sidebar-top .sidebar-part .notif {
+    font-size: 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    width: 20px;
+    padding: 8px;
+    color: white;
+    border-radius: 100%;
+    top: -9px;
+    left: 20px;
+    right: 0;
+    bottom: 9px;
+}
+
+.sidebar .sidebar-top .sidebar-part .notif-email {
+    font-size: 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    width: 20px;
+    padding: 7px 8px;
+    color: white;
+    border-radius: 100%;
+    top: -10px;
+    left: 20px;
+    right: 0;
+    bottom: 10px;
+}
+
+.sidebar .sidebar-top .active::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid royalblue;
+    width: 20px;
+    margin: auto;
+    border-radius: 20%;
+    margin-top: 4px;
+}
+
+.sidebar .sidebar-top .fas,
+.sidebar .sidebar-top .far,
+.sidebar .sidebar-top .fab,
+.sidebar .sidebar-top svg {
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar .game-part {
+    border-right: 2px solid rgb(222, 240, 253);
+    padding-bottom: 190px;
+}
+
+.sidebar .game-part-component h2 {
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.sidebar .game-part-center {
+    width: 40px;
+    color: royalblue;
+    margin: 40px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 3px rgb(221, 221, 221);
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebar .game-img {
+    width: 40px;
+    border-radius: 10px;
+}
+
+.sidebar .profile {
+    margin-bottom: 12.2px;
+    background-color: royalblue;
+    border-radius: 14px;
+    box-shadow: 0 0 6px rgb(146, 171, 248);
+}
+
+.sidebar .profile .profile-img {
+    width: 36px;
+    border-radius: 100%;
+}
+
+.sidebar .profile-settings svg {
+    cursor: pointer;
+    margin-top: -16px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+
+
+/* Main bagian utama */
+
+.main {
+    padding: 40px 20px;
+}
+
+.main h5 {
+    font-weight: 600;
+}
+
+.main .header p {
+    font-weight: 600;
+}
+
+.main .header .menu {
+    margin-top: 8px;
+    background-color: white;
+    padding: 4px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgb(220, 231, 247);
+    color: royalblue;
+}
+
+.main .btn-add {
+    box-shadow: 0 0 3px rgb(224, 224, 224);
+    border-radius: 6px;
+}
+
+.header-part h3 {
+    font-weight: 600;
+    font-size: 26px;
+    font-family: 'Poppins';
+}
+
+.header-part .fortnite {
+    top: 0;
+    position: relative;
+    background-color: rgb(36, 233, 233);
+    overflow: hidden;
+    border-radius: 14px;
+    transition: all ease .3s;
+}
+
+.header-part .fortnite:hover {
+    top: -3px;
+    box-shadow: 0 4px 1px rgb(33, 206, 206);
+}
+
+.header-part h3 {
+    font-weight: 600;
+    font-size: 26px;
+    font-family: 'Poppins';
+}
+
+.header-part .overwatch {
+    top: 0;
+    position: relative;
+    background-color: rgb(240, 196, 0);
+    overflow: hidden;
+    border-radius: 14px;
+    transition: all ease .3s;
+}
+
+.header-part .overwatch:hover {
+    top: -3px;
+    box-shadow: 0 4px 1px rgb(211, 172, 0);
+}
+
+.header-part h3 {
+    font-weight: 600;
+    font-size: 26px;
+    font-family: 'Poppins';
+}
+
+.header-part .dota {
+    top: 0;
+    position: relative;
+    background-color: rgb(255, 85, 85);
+    overflow: hidden;
+    border-radius: 14px;
+    transition: all ease .3s;
+}
+
+.header-part .dota:hover {
+    top: -3px;
+    box-shadow: 0 4px 1px rgb(209, 39, 39);
+}
+
+.lol {
+    width: 94%;
+    margin: auto;
+    margin-top: 36px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgb(231, 231, 231);
+}
+
+.lol img {
+    border-radius: 16px;
+}
+
+.lol h2 {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+
+.lol p {
+    font-weight: 600;
+}
+
+.lol .lol-watch {
+    position: relative;
+}
+
+.lol .lol-watch .fas {
+    opacity: 0;
+    font-size: 40px;
+    border-radius: 16px;
+    color: rgb(195, 0, 235);
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 11px;
+    right: 12px;
+    bottom: 0;
+    transition: all ease .2s;
+}
+
+.lol .lol-watch .fas:hover {
+    opacity: 1;
+}
+
+.lol .watch {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 0;
+    color: rgb(195, 0, 235);
+    font-weight: 600;
+    display: inline-block;
+    font-family: 'Poppins';
+    border-radius: 6px;
+    transition: all ease .4s;
+}
+
+.lol .watch:hover {
+    background-color: rgb(195, 0, 235);
+    color: white;
+    padding: 10px;
+}
+
+.over {
+    width: 94%;
+    margin: auto;
+    margin-top: 36px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgb(231, 231, 231);
+}
+
+.over img {
+    border-radius: 16px;
+}
+
+.over h5 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.over p {
+    font-weight: 600;
+}
+
+.over .watch {
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 0;
+    color: rgb(240, 196, 0);
+    font-weight: 600;
+    display: inline-block;
+    font-family: 'Poppins';
+    border-radius: 6px;
+    transition: all ease .4s;
+}
+
+.over .watch:hover {
+    background-color: rgb(240, 196, 0);
+    color: white;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* Groups Chats */
+
+.groups {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: rgb(253, 241, 218);
+    box-shadow: -3px 0 8px rgb(186, 218, 247);
+}
+
+.groups h5 {
+    font-weight: 600;
+}
+
+.groups .game {
+    border-radius: 16px;
+    margin-top: 30px;
+    box-shadow: 0 0 4px rgb(253, 215, 149);
+}
+
+.groups .game-chats img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.groups .game-chats p {
+    margin: 0;
+    font-weight: 600;
+    margin-top: 16px;
+    font-family: 'Poppins';
+}
+
+.groups .game-chats h6 {
+    margin-top: 4px;
+    color: rgb(148, 148, 148);
+}
+
+.groups .groups-chats img {
+    width: 34px;
+    border: 2px solid white;
+    border-radius: 100%;
+    margin-right: -10px;
+}
+
+.groups .groups-chats h3 {
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.groups .groups-chats p {
+    font-weight: 600;
+}
+
+.groups .popular-section {
+    box-shadow: 0 0 4px rgb(253, 215, 149);
+    border-radius: 16px;
+}
+
+.groups .popular {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-top: 30px;
+}
+
+.groups .popular-chats img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.groups .popular-chats p {
+    margin: 0;
+    font-weight: 600;
+    margin-top: 16px;
+    font-family: 'Poppins';
+}
+
+.groups .popular-chats h5 {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 3px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.groups .popular-chats h6 {
+    margin-top: 4px;
+    color: rgb(148, 148, 148);
+}
+
+.groups .popular-items {
+    background-color: rgb(220, 237, 250);
+}
+
+.groups .popular-items.bottom {
+    margin-top: -12px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.groups .btn-load-more {
+    color: rgb(247, 247, 247);
+    font-weight: 700;
+    padding: 6px 36px;
+    background-color: rgb(248, 180, 63);
+    margin-top: 30px;
+    box-shadow: 0 0 4px rgb(253, 215, 149);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 993px) {
+    .sidebar {
+        position: fixed;
+        z-index: 1;
+        width: 500px;
+        height: 100%;
+        overflow: scroll;
+        border-radius: 0;
+        margin-left: -1000px;
+        box-shadow: 1px 0 5px rgb(103, 103, 145);
+    }
+
+    .sidebar .game-part {
+        padding-bottom: 0;
+    }
+
+    .sidebar .profile-settings svg {
+        margin: auto 6px;
+        margin-top: -16px;
+    }
+
+    .sidebar .sidebar-top {
+        border-top-right-radius: 0;
+    }
+
+    .groups {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .sidebar {
+        width: 360px;
+    }
+}
+
+@media (max-width: 425px) {
+    .sidebar {
+        width: 290px;
+    }
+
+    .sidebar .profile-settings svg {
+        margin: auto 6px;
+        margin-bottom: 20px;
+        margin-top: 4px;
+    }
+}
